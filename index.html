@@ -200,9 +200,9 @@
                 
                 <!-- PESTAÑAS DE NAVEGACIÓN INTERNA -->
                 <div class="header-tabs">
-                    <button class="tab-btn active" onclick="cambiarPestana('POWER BI CALOX', this)">📊 CALOX</button>
-                    <button class="tab-btn" onclick="cambiarPestana('POWER BI MUNCHY', this)">📊 MUNCHY</button>
-                    <button class="tab-btn" onclick="cambiarPestana('POWER BI FUNDICION', this)">📊 FP</button>
+                    <button class="tab-btn active" onclick="cambiarPestana('POWER BI CALOX', this)"> CALOX</button>
+                    <button class="tab-btn" onclick="cambiarPestana('POWER BI MUNCHY', this)"> MUNCHY</button>
+                    <button class="tab-btn" onclick="cambiarPestana('POWER BI FUNDICION', this)"> FP</button>
                 </div>
             </div>
 
@@ -210,18 +210,18 @@
         </header>
 
         <!-- SECCIÓN 1: POWER BI CALOX (Activa por defecto) -->
-        <div id="seccion-powerbiDB" class="content-section active">
-            <iframe title="ReportePowerBI-DB" src="https://app.powerbi.com/view?r=eyJrIjoiNDM1NGYxZjQtY2YwYS00NzQyLThmZGYtOTc1NmM0NWE1ODM3IiwidCI6IjliNzVhNTU3LWQ2MTMtNDgyOC1iYjNjLWU3NGRhN2EwOTk1ZCIsImMiOjR9" allowFullScreen="true"></iframe>
+        <div id="seccion-POWER BI CALOX" class="content-section active">
+            <iframe title="POWER BI CALOX" src="https://app.powerbi.com/view?r=eyJrIjoiNDM1NGYxZjQtY2YwYS00NzQyLThmZGYtOTc1NmM0NWE1ODM3IiwidCI6IjliNzVhNTU3LWQ2MTMtNDgyOC1iYjNjLWU3NGRhN2EwOTk1ZCIsImMiOjR9" allowFullScreen="true"></iframe>
         </div>
 
         <!-- SECCIÓN 2: POWER BI MUNCHY (Oculta por defecto) -->
-        <div id="seccion-powerbiTP" class="content-section">
-            <iframe title="ReportePowerBI-TP" src="https://app.powerbi.com/view?r=eyJrIjoiNGJhN2ZlYTctMzQwZC00MmI3LWIxZjgtYzcwMDVhMjM0OTNmIiwidCI6IjliNzVhNTU3LWQ2MTMtNDgyOC1iYjNjLWU3NGRhN2EwOTk1ZCIsImMiOjR9" allowFullScreen="true"></iframe>
+        <div id="seccion-POWER BI MUNCHY" class="content-section">
+            <iframe title="POWER BI MUNCHY" src="https://app.powerbi.com/view?r=eyJrIjoiNGJhN2ZlYTctMzQwZC00MmI3LWIxZjgtYzcwMDVhMjM0OTNmIiwidCI6IjliNzVhNTU3LWQ2MTMtNDgyOC1iYjNjLWU3NGRhN2EwOTk1ZCIsImMiOjR9" allowFullScreen="true"></iframe>
         </div>
 
  <!-- SECCIÓN 3: POWER BI FUNDICION (Oculta por defecto) -->
-        <div id="seccion-powerbiTP" class="content-section">
-            <iframe title="ReportePowerBI-TP" src="https://app.powerbi.com/view?r=eyJrIjoiMzVhYTM5NWUtNjJiMS00N2Q3LThjM2QtMjY1ZTMxYTQ2NTdjIiwidCI6IjliNzVhNTU3LWQ2MTMtNDgyOC1iYjNjLWU3NGRhN2EwOTk1ZCIsImMiOjR9" allowFullScreen="true"></iframe>
+        <div id="seccion-POWER BI FUNDICION" class="content-section">
+            <iframe title="POWER BI FUNDICION" src="https://app.powerbi.com/view?r=eyJrIjoiMzVhYTM5NWUtNjJiMS00N2Q3LThjM2QtMjY1ZTMxYTQ2NTdjIiwidCI6IjliNzVhNTU3LWQ2MTMtNDgyOC1iYjNjLWU3NGRhN2EwOTk1ZCIsImMiOjR9" allowFullScreen="true"></iframe>
         </div>
 
     </div>
@@ -257,10 +257,13 @@
                 btn.classList.remove('active');
             });
 
-            if (seccion === 'powerbiDB') {
-                document.getElementById('seccion-powerbiDB').classList.add('active');
-            } else if (seccion === 'powerbiTP') {
-                document.getElementById('seccion-powerbiTP').classList.add('active');
+            if (seccion === 'POWER BI CALOX') {
+                document.getElementById('seccion-POWER BI CALOX').classList.add('active');
+            } else if (seccion === 'POWER BI MUNCHY') {
+                document.getElementById('seccion-POWER BI MUNCHY').classList.add('active');
+            }
+            } else if (seccion === 'POWER BI FUNDICION') {
+                document.getElementById('seccion-POWER BI FUNDICION').classList.add('active');
             }
 
             boton.classList.add('active');
