@@ -203,6 +203,12 @@
                     <button class="tab-btn active" onclick="cambiarPestana('POWER BI CALOX', this)"> CALOX</button>
                     <button class="tab-btn" onclick="cambiarPestana('POWER BI MUNCHY', this)"> MUNCHY</button>
                     <button class="tab-btn" onclick="cambiarPestana('POWER BI FUNDICION', this)"> FP</button>
+                    <button class="tab-btn" onclick="cambiarPestana('POWER BI OLEICA', this)"> OLEICA</button>
+                    <button class="tab-btn" onclick="cambiarPestana('POWER BI LACTALIS', this)"> LACTALIS</button>
+                    <button class="tab-btn" onclick="cambiarPestana('POWER BI MIMESA', this)"> MIMESA</button>
+                    <button class="tab-btn" onclick="cambiarPestana('POWER BI PLUMROSE', this)"> PLUMROSE</button>
+                    <button class="tab-btn" onclick="cambiarPestana('POWER BI SAN SIMON', this)"> SAN SIMON</button>
+                    <button class="tab-btn" onclick="cambiarPestana('POWER BI VALMY', this)"> VALMY</button>
                 </div>
             </div>
 
@@ -224,6 +230,36 @@
             <iframe title="POWER BI FUNDICION" src="https://app.powerbi.com/view?r=eyJrIjoiMzVhYTM5NWUtNjJiMS00N2Q3LThjM2QtMjY1ZTMxYTQ2NTdjIiwidCI6IjliNzVhNTU3LWQ2MTMtNDgyOC1iYjNjLWU3NGRhN2EwOTk1ZCIsImMiOjR9" allowFullScreen="true"></iframe>
         </div>
 
+ <!-- SECCIÓN 4: POWER BI OLEICA (Oculta por defecto) -->
+        <div id="seccion-POWER BI OLEICA" class="content-section">
+            <iframe title="POWER BI OLEICA" src="https://app.powerbi.com/view?r=eyJrIjoiOGY3ZTFjNjgtMjZhMi00ZTQ0LWIxZjctNTMwMGFhYWZiNmU1IiwidCI6IjliNzVhNTU3LWQ2MTMtNDgyOC1iYjNjLWU3NGRhN2EwOTk1ZCIsImMiOjR9" allowFullScreen="true"></iframe>
+        </div>
+
+ <!-- SECCIÓN 5: POWER BI LACTALIS (Oculta por defecto) -->
+        <div id="seccion-POWER BI LACTALIS" class="content-section">
+            <iframe title="POWER BI LACTALIS" src="https://app.powerbi.com/view?r=eyJrIjoiNmQ1ZTViZGMtNTVjZS00ZTE3LTliMzYtNGE0NGFiOGQwYzA5IiwidCI6IjliNzVhNTU3LWQ2MTMtNDgyOC1iYjNjLWU3NGRhN2EwOTk1ZCIsImMiOjR9" allowFullScreen="true"></iframe>
+        </div>
+     
+ <!-- SECCIÓN 6: POWER BI MIMESA (Oculta por defecto) -->
+        <div id="seccion-POWER BI MIMESA" class="content-section">
+            <iframe title="POWER BI MIMESA" src="https://app.powerbi.com/view?r=eyJrIjoiMjMxMDU5OWYtMWFhNC00NjY3LWE5NmYtYTZiMTI1MjY1NzUyIiwidCI6IjliNzVhNTU3LWQ2MTMtNDgyOC1iYjNjLWU3NGRhN2EwOTk1ZCIsImMiOjR9" allowFullScreen="true"></iframe>
+        </div>
+     
+ <!-- SECCIÓN 7: POWER BI PLUMROSE (Oculta por defecto) -->
+        <div id="seccion-POWER BI PLUMROSE" class="content-section">
+            <iframe title="POWER BI PLUMROSE" src="https://app.powerbi.com/view?r=eyJrIjoiMGE5OGEzNTAtNjg5Ny00ZmRiLTkwMjQtMmUyYmViNmI4YTU4IiwidCI6IjliNzVhNTU3LWQ2MTMtNDgyOC1iYjNjLWU3NGRhN2EwOTk1ZCIsImMiOjR9" allowFullScreen="true"></iframe>
+        </div>
+     
+ <!-- SECCIÓN 8: POWER BI SAN SIMON (Oculta por defecto) -->
+        <div id="seccion-POWER BI SAN SIMON" class="content-section">
+            <iframe title="POWER BI SAN SIMON" src="https://app.powerbi.com/view?r=eyJrIjoiZWZjOTdkNjgtY2Y3NS00YWE4LThmZWEtMmQ3OWFkNjQwZjlkIiwidCI6IjliNzVhNTU3LWQ2MTMtNDgyOC1iYjNjLWU3NGRhN2EwOTk1ZCIsImMiOjR9" allowFullScreen="true"></iframe>
+        </div>
+     
+ <!-- SECCIÓN 9: POWER BI VALMY (Oculta por defecto) -->
+        <div id="seccion-POWER BI VALMY" class="content-section">
+            <iframe title="POWER BI VALMY" src="https://app.powerbi.com/view?r=eyJrIjoiNmM3NDkxOWUtZDg0NC00MTkzLWI5MmUtZThjMzc5MTg0MzZiIiwidCI6IjliNzVhNTU3LWQ2MTMtNDgyOC1iYjNjLWU3NGRhN2EwOTk1ZCIsImMiOjR9" allowFullScreen="true"></iframe>
+        </div>
+             
     </div>
 
     <script>
@@ -265,7 +301,24 @@
             } else if (seccion === 'POWER BI FUNDICION') {
                 document.getElementById('seccion-POWER BI FUNDICION').classList.add('active');
             }
-
+            } else if (seccion === 'POWER BI OLEICA') {
+                document.getElementById('seccion-POWER BI OLEICA').classList.add('active');
+            }
+            } else if (seccion === 'POWER BI LACTALIS') {
+                document.getElementById('seccion-POWER BI LACTALIS').classList.add('active');
+            }
+            } else if (seccion === 'POWER BI MIMESA') {
+                document.getElementById('seccion-POWER BI MIMESA').classList.add('active');
+            }
+            } else if (seccion === 'POWER BI PLUMROSE') {
+                document.getElementById('seccion-POWER BI FUNDICION').classList.add('active');
+            }
+            } else if (seccion === 'POWER BI SAN SIMON') {
+                document.getElementById('seccion-POWER BI FUNDICION').classList.add('active');
+            }
+            } else if (seccion === 'POWER BI VALMY') {
+                document.getElementById('seccion-POWER BI FUNDICION').classList.add('active');
+            }
             boton.classList.add('active');
         }
 
